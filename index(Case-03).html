@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 03</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 200vh;
+            position: relative;
+        }
+
+        .circle {
+            position: fixed;
+            border-radius: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        #outerCircle {
+            width: 200px;
+            height: 200px;
+            border: 10px solid gray;
+        }
+
+        #innerCircle {
+            width: 180px;
+            height: 180px;
+            border: 10px solid red;
+        }
+
+        .hide {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #middle1 {
+            background: purple;
+        }
+
+        #middle2 {
+            background: blue;
+        }
+
+        #middle3 {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div id="outerCircle" class="circle">
+        <div id="innerCircle" class="circle">
+            <div id="middle1" class="hide">
+                <p>Hello</p>
+            </div>
+            <div id="middle2" class="hide">
+                <p>Welcome To</p>
+            </div>
+            <div id="middle3" class="hide">
+                <p>Institute of Software Engineering</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
