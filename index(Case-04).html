@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+    <style>
+        section {
+            height: 100vh;
+            position: relative;
+        }
+
+        section:nth-child(1) {
+            background-color: white;
+        }
+        section:nth-child(2) {
+            background-color: skyblue;
+        }
+        section:nth-child(3) {
+            background-color: gray;
+        }
+        section:nth-child(4) {
+            background-color: orange;
+        }
+
+        div {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        section:nth-child(1)>div{
+            background-color: red;
+        }
+        section:nth-child(2)>div{
+            background-color: blue;
+        }
+        section:nth-child(3)>div{
+            background-color: lightgray;
+        }
+        section:nth-child(4)>div{
+            background-color: yellow;
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div>Card 01</div>
+    <h1>Hello</h1>
+</section>
+
+<section>
+    <div>Card 02</div>
+    <h1>How</h1>
+</section>
+
+<section>
+    <div>Card 04</div>
+    <h1>Are</h1>
+</section>
+
+<section>
+    <div>Card 04</div>
+    <h1>You..?</h1>
+</section>
+
+</body>
+</html>
