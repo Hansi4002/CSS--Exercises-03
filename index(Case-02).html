@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 02</title>
+    <link rel="stylesheet" href="assets/lib/normalize.css">
+
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background: white;
+            border-bottom: 3px solid black;
+            box-sizing: border-box;
+        }
+
+        header>img {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            width: 100px;
+        }
+
+        header>nav {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        header>nav>a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+
+        .sidebar {
+            position: relative;
+            float: left;
+            width: 200px;
+            margin-top: 70px;
+            background: purple;
+            padding: 15px;
+            box-sizing: border-box;
+            height: 100vh;
+        }
+
+        .sidebar >a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .sidebar >a:hover {
+            background: rgba(255,255,255,0.2)
+        }
+
+        .main {
+            position: relative;
+            margin-left: 220px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .main >p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            position: relative;
+            clear: both;
+            width: 100%;
+            height: 50px;
+            background: grey;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 20px;
+        }
+
+        section {
+            display: flex;
+            padding: 75px 0 0 0;
+            margin-left: 220px;
+        }
+
+        section>div {
+            width: 100vw;
+            height: 300px;
+            background: lightgray;
+            border: 1px solid black;
+        }
+
+        section > div >div{
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://ijseoracle.wordpress.com/wp-content/uploads/2011/06/logoijse2.png" width="100px">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contacts</a>
+        <a href="#">About Us</a>
+    </aside>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium assumenda corporis, culpa debitis dicta ea eius et eveniet illo, ipsa ipsum magni perspiciatis placeat quae qui sit, tempore voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium assumenda corporis, culpa debitis dicta ea eius et eveniet illo, ipsa ipsum magni perspiciatis placeat quae qui sit, tempore voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium assumenda corporis, culpa debitis dicta ea eius et eveniet illo, ipsa ipsum magni perspiciatis placeat quae qui sit, tempore voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium assumenda corporis, culpa debitis dicta ea eius et eveniet illo, ipsa ipsum magni perspiciatis placeat quae qui sit, tempore voluptatem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium assumenda corporis, culpa debitis dicta ea eius et eveniet illo, ipsa ipsum magni perspiciatis placeat quae qui sit, tempore voluptatem.</p>
+    </div>
+
+    <footer>
+        <div>Developed By IJSE</div>
+    </footer>
+</body>
+</html>
