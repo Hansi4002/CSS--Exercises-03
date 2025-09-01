@@ -5,161 +5,165 @@
   <title>Case 01</title>
   <link rel="stylesheet" href="assets/lib/normalize.css">
   <style>
-    .main {
-      width: 50vw;
-      height: 50vh;
+    .main{
       position: absolute;
+      width: 50%;
+      height: 50%;
     }
 
-    #div01 {
+    #main1{
       background: red;
     }
-    #div02 {
+    #main2{
       background: green;
       right: 0;
     }
-    #div03 {
+    #main3{
       background: yellow;
       bottom: 0;
+      left: 0;
     }
-    #div04 {
-      background: hotpink;
-      right: 0;
+    #main4{
+      background: palevioletred;
       bottom: 0;
+      right: 0;
     }
 
     .circle{
-      position: absolute;
       width: 200px;
       height: 200px;
       background: white;
-      border-radius: 100px;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-    }
-
-    .main>.circle>div{
-      width: 100px;
-      height: 100px;
-      background: red;
       position: absolute;
+      bottom: 0;
+      top: 0;
       left: 0;
       right: 0;
-      top: 0;
-      bottom: 0;
       margin: auto;
+      border-radius: 100%;
     }
 
     .rectangle {
       position: absolute;
-      width: 150px;
-      height: 150px;
-      background: white;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-    }
-
-    .rectangle > div {
-      position: absolute;
-      width: 100px;
       height: 100px;
+      width: 100px;
       background: red;
-      border-radius: 100px;
+      bottom: 0;
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
       margin: auto;
     }
 
-    .corner {
+    .halfCircle {
+      position: absolute;
       width: 100px;
       height: 100px;
       background: white;
-      position: absolute;
+    }
+    #halfCircle1{
+      left: 0;
+      top: 0;
+      border-radius: 0 0 100px 0;
     }
 
-    #corner1 {
-      border-bottom-right-radius: 100%;
-    }
-
-    #corner2 {
+    #halfCircle2{
       right: 0;
-      border-bottom-left-radius: 100%;
+      top: 0;
+      border-radius: 0 0 0 100px;
     }
 
-    #corner3 {
+    #halfCircle3{
       bottom: 0;
-      border-top-right-radius: 100%;
+      left: 0;
+      border-radius: 0 100px 0 0;
     }
 
-    #corner4 {
+    #halfCircle4{
       bottom: 0;
       right: 0;
-      border-top-left-radius: 100%;
+      border-radius: 100px 0 0 0;
     }
 
-    .half-circle {
+    #corner1{
+      right: 0;
+      top: 0;
+      border-radius: 0 0 0 100px;
+    }
+    #corner2{
+      left: 0;
+      top: 0;
+      border-radius: 0 0 100px 0;
+    }
+
+    #corner3{
+      right: 0;
+      bottom: 0;
+      border-radius: 100px 0 0 0;
+    }
+    #corner4{
+      left: 0;
+      bottom: 0;
+      border-radius: 0 100px 0 0;
+    }
+
+    #middle{
       position: absolute;
       width: 200px;
       height: 200px;
       background: white;
+      right: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    #middleCircle{
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: red;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
       border-radius: 100%;
-    }
-
-    #half-circle1 {
-      left: 0;
-      right: 0;
-      margin: auto;
-      top: -100px;
-    }
-
-    #half-circle2 {
-      bottom: -100px;
-      left: 0;
-      right: 0;
-      margin: auto;
     }
   </style>
 </head>
 <body>
-  <div id="div01" class="main">
-    <div class="circle">
-      <div></div>
-    </div>
+<div id= "main1" class="main">
+  <div class="circle">
+    <div class="rectangle"></div>
   </div>
-  <div id="div02" class="main">
-    <div class="circle">
-      <div></div>
-    </div>
+  <div id="halfCircle1" class="halfCircle"></div>
+  <div class="halfCircle" id="corner1"></div>
+</div>
+<div id= "main2" class="main">
+  <div class="circle">
+    <div class="rectangle"></div>
   </div>
-  <div id="div03" class="main">
-    <div class="circle">
-      <div></div>
-    </div>
+  <div id="halfCircle2" class="halfCircle"></div>
+  <div class="halfCircle" id="corner2"></div>
+</div>
+<div id= "main3" class="main">
+  <div class="circle">
+    <div class="rectangle"></div>
   </div>
-  <div id="div04" class="main">
-    <div class="circle">
-      <div></div>
-    </div>
+  <div id="halfCircle3" class="halfCircle"></div>
+  <div class="halfCircle" id="corner3"></div>
+</div>
+<div id= "main4" class="main">
+  <div class="circle">
+    <div class="rectangle"></div>
   </div>
+  <div id="halfCircle4" class="halfCircle"></div>
+  <div class="halfCircle" id="corner4"></div>
+</div>
 
-  <div class="rectangle">
-    <div></div>
-  </div>
-
-  <div id="corner1" class="corner"></div>
-  <div id="corner2" class="corner"></div>
-  <div id="corner3" class="corner"></div>
-  <div id="corner4" class="corner"></div>
-
-  <div id="half-circle1" class="half-circle"></div>
-  <div id="half-circle2" class="half-circle"></div>
+<div id="middle">
+  <div id="middleCircle"></div>
+</div>
 </body>
 </html>
